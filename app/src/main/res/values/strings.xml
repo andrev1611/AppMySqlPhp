@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ANDROID - MYSQL - PHP</string>
+    <string name="texttitulo">DIRECTORIO</string>
+
+    <string name="hintid">ID</string>
+    <string name="hintnombres">NOMBRES</string>
+    <string name="hinttelefono">TELÉFONO</string>
+
+    <string name="textguardar">GUARDAR</string>
+    <string name="textconsulta">CONSULTAR</string>
+</resources>
