@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
     //MÉTODO PARA CONVERTIR EL INPUTSREAM A STRING - TAMBIEN HAY PARA CONVERTIR EL IS A UN BITMAP OSEA IMAGEN
-    public String readIt(InputStream stream, int len) throws IOException {
+    public String readIt(InputStream stream, int len) throws IOException {//UnsupportedEncodingException esto puede o no ir, normal
         Reader reader = null;
         reader = new InputStreamReader(stream, "UTF-8");
         char[] buffer = new char[len];
