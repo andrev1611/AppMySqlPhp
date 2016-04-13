@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return "Unable to retrieve web page. URL may be invalid.";
             }
         }
-        // onPostExecute displays the results of the AsyncTask.
+        // esto sucede cuando se terminna de ejecutar la url que mandamos
         @Override
         protected void onPostExecute(String result) {
             //Toast.makeText(getApplicationContext(),"Se consultó los datos correctamente",Toast.LENGTH_SHORT).show();
@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
     //MÉTODO PARA CONVERTIR EL INPUTSREAM A STRING - TAMBIEN HAY PARA CONVERTIR EL IS A UN BITMAP OSEA IMAGEN
-    public String readIt(InputStream stream, int len) throws IOException, UnsupportedEncodingException {
+    public String readIt(InputStream stream, int len) throws IOException {
         Reader reader = null;
         reader = new InputStreamReader(stream, "UTF-8");
         char[] buffer = new char[len];
